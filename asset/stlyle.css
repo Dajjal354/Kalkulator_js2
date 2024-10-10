@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.calculator {
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    background-color: #eb7734;
+}
+
+.calculator-screen {
+    width: 100%;
+    height: 40px;
+    text-align: right;
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.calculator-buttons button {
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.calculator-buttons button:hover {
+    background-color: #eb7734;
+}
+
+#history {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 85%;
+    max-width: 400px;
+    background-color: #f9f9f9; /* Warna latar belakang yang lebih cerah */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan lembut untuk efek kedalaman */
+}
+
+#history li {
+    list-style-type: none;
+    padding: 10px; /* Ruang yang lebih besar di dalam item */
+    border-bottom: 1px solid #ddd; /* Garis bawah yang lebih lembut */
+    transition: background-color 0.3s; /* Efek transisi untuk hover */
+}
+
+#history li:last-child {
+    border-bottom: none; /* Menghapus garis bawah dari item terakhir */
+}
+
+#history li:hover {
+    background-color: #eb7734; /* Warna latar belakang saat hover */
+    color: white; /* Mengubah warna teks saat hover */
+    cursor: pointer; /* Menunjukkan bahwa item dapat dipilih */
+}
+
+#history li input[type="checkbox"] {
+    margin-right: 10px; /* Jarak antara checkbox dan teks */
+}
+
+/* Tambahan untuk tombol hapus */
+#delete-selected {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ff4d4d; /* Warna latar belakang merah */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#delete-selected:hover {
+    background-color: #ff1a1a; /* Warna saat hover */
+}
+
